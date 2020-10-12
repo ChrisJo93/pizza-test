@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="scripts/client.js"></script>
+
+        <title>Pizza Test</title>
+    </head>
+    <body>
+        <div class="pizzaContainer"></div>
+        <input class="dough empty" type="text" placeholder="Dough">
+        <input class="firstTopping empty" type="text" placeholder="First Topping">
+        <input class="secondTopping empty" type="text" placeholder="Second Topping">
+        <input class="sauce empty" type="text" placeholder="Sauce">
+        <input class="numberOfPizzas empty" type="number" placeholder="Number of Pizzas">
+        <input class="price empty" type="number" placeholder="Price">
+        <button class="pizza-btn-submit">Add Pizza</button>
+    </div>
+
+    <div class="renderContainer">
+        <table>
+            <thead>
+                <tr>
+                    <td>Dough</td>
+                    <td>First Topping</td>
+                    <td>Second Topping</td>
+                    <td>Sauce</td>
+                    <td>Number of Pizzas</td>
+                    <td>Price</td>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody class="renderDisplay"></tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4"></td>
+                    <td colspan="2">
+                        Total Cost: <span class="pizzaCost">0</span>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    </body>
+</html>
